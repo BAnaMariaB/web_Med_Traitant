@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a class="logo" href="home.html"><h2>DOCTEUR MATILDA BORDUSELU</h2></a>
+
+            <div class ="nav-links" id="navLinks">
+                <!-- <img src="/photo/cross.svg" alt="croix" aria-hidden="true" onclick ="hideMenu()">-->
+                <ul>
+                    <li> <a href="home.html">ACCEUIL</a></li>
+                    <li> <a href="#">LES SOINS</a></li>
+                    <li> <a href="#">CONTACT</a></li>
+                </ul>
+                
+            </div>
+            <img src="/photo/menu-burger.svg" alt="menu" aria-hidden="true" onclick ="showMenu()">
+        </nav>
+    </section>
+    
+    <!--Java Script for toggle menu -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right ="0";
+        }
+        function hideMenu(){
+            navLinks.style.right ="-200px";
+        }
+    </script>
+</body>
+</html>
